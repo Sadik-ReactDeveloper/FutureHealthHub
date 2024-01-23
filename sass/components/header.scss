@@ -35,7 +35,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-dark-1);
+  background-color: #fff !important;
+  // background-color: var(--color-dark-1);
   padding: 0 20px;
 
   @include media-down(lg) {

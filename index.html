@@ -38,7 +38,7 @@
 
   <main class="main-content">
 
-    <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
+    <header data-anim="fade"  class="header -type-1 js-header">
       <div class="header__container">
         <div class="row justify-between items-center">
 
@@ -64,23 +64,23 @@
               </div>
 
               <div class="menu js-navList">
-                <ul class="menu__nav text-white -is-active">
-                  <li class="menu-item-has-children">
+                <ul class="menu__nav  -is-active">
+                  <li>
                     <a  href="#">
                       Home</i>
                     </a>
                   </li>
                   <li>
-                    <!-- <a data-barba href="#">About Us </a> -->
+                
                     <a  href="about-1.html">About Us</a>
 
                   </li>
-                  <!-- <li>
+                  <li>
                    
                     <a  href="about-1.html">Products</a>
 
-                  </li> -->
-                  <!-- <li>
+                  </li>
+                  <li>
                    
                     <a  href="about-1.html">TERMS & CONDITION</a>
 
@@ -89,10 +89,8 @@
                    
                     <a  href="about-1.html">PRIVACY POLICY</a>
 
-                  </li> -->
-                 <li>
-                    <a data-barba href="signup.html">User Register</a>
                   </li>
+               
                   <li>
                     <a data-barba href="signup.html">Dealer Register</a>
                   </li>
@@ -276,7 +274,7 @@
 
 
                 <div class="d-none xl:d-block ml-20">
-                  <button class="text-white items-center" data-el-toggle=".js-mobile-menu-toggle">
+                  <button class=" items-center" data-el-toggle=".js-mobile-menu-toggle">
                     <i class="text-11 icon icon-mobile-menu"></i>
                   </button>
                 </div>
@@ -284,7 +282,7 @@
               </div>
 
               <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
-                <a href="login.html" class="button -underline text-white login-btn">Log in</a>
+                <a href="login.html" class="button -underline  login-btn">Log in</a>
                
               </div>
             </div>
@@ -5533,7 +5531,7 @@
           <div class="tabs__content pt-60 lg:pt-40 js-tabs-content">
 
             <div class="tabs__pane -tab-item-1 is-active">
-              <div class="row y-gap-30 justify-center">
+              <div class="row y-gap-30">
 
                 <div data-anim-child="slide-up delay-1" class="col-lg-3">
                   <a href="#" class="coursesCard -type-4 d-flex sm:d-block items-center border-light rounded-8 px-10 py-10">
@@ -5650,7 +5648,7 @@
                    </div>
                   </a>
                 </div>
-                <div data-anim-child="slide-up delay-1" class="col-lg-3">
+                <!-- <div data-anim-child="slide-up delay-1" class="col-lg-3">
                   <a href="#" class="coursesCard -type-4 d-flex sm:d-block items-center border-light rounded-8 px-10 py-10">
                    <div class="row">
                    <div class="col-lg-12 col-md-6 col-sm-12">
@@ -5672,8 +5670,8 @@
                   <div class="check my-1"><button class="w-100 addtocart btn btn-outline-primary">CHECK OUT</button></div>
                    </div>
                   </a>
-                </div>
-                <div data-anim-child="slide-up delay-1" class="col-lg-3">
+                </div> -->
+                <!-- <div data-anim-child="slide-up delay-1" class="col-lg-3">
                   <a href="#" class="coursesCard -type-4 d-flex sm:d-block items-center border-light rounded-8 px-10 py-10">
                    <div class="row">
                    <div class="col-lg-12 col-md-6 col-sm-12">
@@ -5855,7 +5853,7 @@
                   <div class="check my-1"><button class="w-100 addtocart btn btn-outline-primary">CHECK OUT</button></div>
                    </div>
                   </a>
-                </div>
+                </div> -->
                 <div class="col-12">
                   <div class="card-body p-5"> 
                     <div class="row">
@@ -11361,164 +11359,35 @@
 
       <!-- videoimage section End -->
 
-      <section class="layout-pt-lg layout-pb-lg bg-purple-1">
-        <div class="container">
-          <div class="row justify-center text-center">
-            <div class="col-auto">
-
-              <div class="sectionTitle ">
-
-                <h2 class="sectionTitle__title text-green-1">What People Say</h2>
-                <p class="sectionTitle__text text-white">Lorem ipsum dolor sit amet, consectetur.</p>
+      <section class="layout-pt-lg ">
+        <div class="container my-5">
+          <div class="row y-gap-30 justify-between items-center">
+            <div class="content-wrapper">
+              <h1>Our Reviews</h1>
+              <div class="blue-line"></div>
+              <div class="wrapper-for-arrows">
+                <div style="opacity: 0;" class="chicken"></div>
+                <div id="reviewWrap" class="review-wrap">
+                  <div id="imgDiv" class="">
+                  </div>
+                  <div id="personName"></div>
+                  <div id="profession"></div>
+                  <div id="description">
+                  </div>
+                </div>
+                <!-- <div id="surpriseMeBtn" class="surprise-me-btn">Surprise me</div> -->
+                <div class="left-arrow-wrap arrow-wrap">
+                  <div class="arrow" id="leftArrow"></div>
+                </div>
+                <div class="right-arrow-wrap arrow-wrap">
+                  <div class="arrow" id="rightArrow"></div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div data-anim-wrap class="js-section-slider pt-50" data-gap="30" data-pagination
-            data-slider-cols="base-3 xl-3 lg-2 md-2 sm-1">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div data-anim-child="slide-left delay-1" class="testimonials -type-1">
-                  <div class="testimonials__content">
-                    <h4 class="testimonials__title">Great Work</h4>
-                    <p class="testimonials__text"> “I think FutureHealthHub is the best theme I ever seen this year. Amazing
-                      design, easy to customize and a design quality superlative account on its cloud platform for the
-                      optimized performance”</p>
-
-                    <div class="testimonials-footer">
-                      <div class="testimonials-footer__image">
-                        <img src="img/testimonials/1.png" alt="image">
-                      </div>
-
-                      <div class="testimonials-footer__content">
-                        <div class="testimonials-footer__title">Courtney Henry</div>
-                        <div class="testimonials-footer__text">Web Designer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div data-anim-child="slide-left delay-2" class="testimonials -type-1">
-                  <div class="testimonials__content">
-                    <h4 class="testimonials__title">Great Work</h4>
-                    <p class="testimonials__text"> “I think FutureHealthHub is the best theme I ever seen this year. Amazing
-                      design, easy to customize and a design quality superlative account on its cloud platform for the
-                      optimized performance”</p>
-
-                    <div class="testimonials-footer">
-                      <div class="testimonials-footer__image">
-                        <img src="img/testimonials/2.png" alt="image">
-                      </div>
-
-                      <div class="testimonials-footer__content">
-                        <div class="testimonials-footer__title">Ronald Richards</div>
-                        <div class="testimonials-footer__text">President of Sales</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div data-anim-child="slide-left delay-3" class="testimonials -type-1">
-                  <div class="testimonials__content">
-                    <h4 class="testimonials__title">Great Work</h4>
-                    <p class="testimonials__text"> “I think FutureHealthHub is the best theme I ever seen this year. Amazing
-                      design, easy to customize and a design quality superlative account on its cloud platform for the
-                      optimized performance”</p>
-
-                    <div class="testimonials-footer">
-                      <div class="testimonials-footer__image">
-                        <img src="img/testimonials/3.png" alt="image">
-                      </div>
-
-                      <div class="testimonials-footer__content">
-                        <div class="testimonials-footer__title">Annette Black</div>
-                        <div class="testimonials-footer__text">Nursing Assistant</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div data-anim-child="slide-left delay-4" class="testimonials -type-1">
-                  <div class="testimonials__content">
-                    <h4 class="testimonials__title">Great Work</h4>
-                    <p class="testimonials__text"> “I think FutureHealthHub is the best theme I ever seen this year. Amazing
-                      design, easy to customize and a design quality superlative account on its cloud platform for the
-                      optimized performance”</p>
-
-                    <div class="testimonials-footer">
-                      <div class="testimonials-footer__image">
-                        <img src="img/testimonials/4.png" alt="image">
-                      </div>
-
-                      <div class="testimonials-footer__content">
-                        <div class="testimonials-footer__title">Courtney Henry</div>
-                        <div class="testimonials-footer__text">Web Designer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
-            <div class="d-flex x-gap-20 items-center justify-end pt-60 lg:pt-40">
-              <div class="col-auto">
-                <button
-                  class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-prev">
-                  <i class="icon icon-arrow-left text-24"></i>
-                </button>
-              </div>
-              <div class="col-auto">
-                <button
-                  class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-next">
-                  <i class="icon icon-arrow-right text-24"></i>
-                </button>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- <div data-anim-wrap class="row y-gap-30 counter__row">
-
-            <div class="col-lg-3 col-sm-6">
-              <div data-anim-child="slide-left delay-1" class="counter -type-1">
-                <div class="counter__number">350,000+</div>
-                <div class="counter__title">Students worldwide</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6">
-              <div data-anim-child="slide-left delay-2" class="counter -type-1">
-                <div class="counter__number">496,00+</div>
-                <div class="counter__title">Total course views</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6">
-              <div data-anim-child="slide-left delay-3" class="counter -type-1">
-                <div class="counter__number">19,000+</div>
-                <div class="counter__title">Five-star course reviews</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6">
-              <div data-anim-child="slide-left delay-4" class="counter -type-1">
-                <div class="counter__number">987,000+</div>
-                <div class="counter__title">Students community</div>
-              </div>
-            </div>
-
-          </div> -->
         </div>
-      </section> 
+
+    </section>
 
       <!-- <section class="layout-pt-lg layout-pb-lg bg-beige-1">
         <div data-anim-wrap class="container">
@@ -12228,13 +12097,16 @@
   </main>
 
   <!-- JavaScript -->
+
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/testimonial.js"></script>
   <script>
     $(function () {
       $('.tabs-nav a').click(function () {
