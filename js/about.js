@@ -6,11 +6,7 @@
 
     BasicSlider.on("init", function (e, slick) {
 
-        var $firstAnimatingElements = $(".single-slider:first-child").find(
-
-            "[data-animation]"
-
-        );
+        var $firstAnimatingElements = $(".single-slider:first-child").find("[data-animation]");
 
         doAnimations($firstAnimatingElements);
 
@@ -47,14 +43,9 @@
         responsive: [
 
             { breakpoint: 767, settings: { dots: false, arrows: false } }
-
-        ]
-
-    });
-
-
-
-    function doAnimations(elements) {
+ ]
+ });
+ function doAnimations(elements) {
 
         var animationEndEvents =
 
@@ -87,5 +78,3 @@
     }
 
 }
-
-// mainSlider();

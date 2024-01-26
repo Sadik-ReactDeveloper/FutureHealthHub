@@ -8,6 +8,7 @@
     left: 54%;
     margin-left: -45px;
     bottom: -505px;
+    /* bottom: -240px; */
     width: 90px;
     z-index: 999;
 }
@@ -96,47 +97,6 @@ img.abtImg {
 /* slider testimonial */
 
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
-
-
-
-/* button,
-input,
-select {
-	font-family: inherit;
-	font-size: 100%;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-} */
-
-/* html {
-	font-size: 12px;
-} */
-
-/* body {
-	color: #000;
-	font-family: "Shippori Antique", sans-serif;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-} */
-
-/* .content-wrapper {
-	height: 100%;
-	width: 70%;
-	max-width: 100rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 5rem;
-} */
-
-/* h1 {
-	margin-bottom: calc(0.7rem + 0.5vmin);
-	font-size: calc(2.3rem + 1vmin);
-} */
-
 .blue-line {
 	height: 0.3rem;
 	width: 6rem;
@@ -319,13 +279,6 @@ select {
         z-index: 999;
     }
 }
-/* .about_bannerImg{
-    background-image: url("");
-} */
-
-/* about us slider */
-
-
 .theme-btn {
 
     display: inline-block;
@@ -696,4 +649,14 @@ select {
 
 .fontpara{
     font-size: 20px;
+}
+.mobile-footer.px-20.py-20.border-top-light.js-mobile-footer {
+    display: none;
+}
+
+.content-color{
+    background-color: #fd7e14;
+   p{
+    color: #fff;
+   }
 }
