@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>FutureHealthHub</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper" onload="mainSlider()">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content  ">
+
+    <header data-anim="fade"  class="header -type-1 js-header">
+        <div class="header__container">
+          <div class="row justify-between items-center">
+  
+            <div class="col-auto">
+              <div class="header-left">
+  
+                <div class="header__logo ">
+                  <a data-barba href="index.html">
+                    <img src="img/general/logoo.png" alt="logo" class="header-logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="header-menu js-mobile-menu-toggle ">
+              <div class="header-menu__content">
+                <div class="mobile-bg js-mobile-bg"></div>
+  
+                <div class="d-none xl:d-flex items-center px-10 py-20 border-bottom-light">
+                  <a href="login.html" class="text-dark-1 ">Log in</a>
+                  <a href="signup.html" class="text-dark-1 ml-30">Sign Up</a>
+                </div>
+  
+                <div class="menu js-navList">
+                  <ul class="menu__nav  -is-active">
+                    <li>
+                      <a  href="index.html">
+                        Home</i>
+                      </a>
+                    </li>
+                    <li>
+                  
+                      <a  href="about-1.html">About Us</a>
+  
+                    </li>
+                    <li>
+                     
+                      <a  href="product.html">Products</a>
+  
+                    </li>
+                    <li>
+                     
+                      <a  href="conditions.html">TERMS & CONDITION</a>
+  
+                    </li>
+                    <li>
+                     
+                      <a  href="policy.html">PRIVACY POLICY</a>
+  
+                    </li>
+                 
+                    <!-- <li>
+                      <a data-barba href="signup.html">Dealership</a>
+                    </li> -->
+                    <li>
+                      <a data-barba href="paymentOption.html">Payment</a>
+                    </li>
+                    <li>
+                      <a data-barba href="signup.html">Dealership</a>
+                    </li>
+                     <li>
+                      <a data-barba href="contact-1.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                  <div class="mobile-footer__number">
+                    <div class="text-17 fw-500 text-dark-1">Call us</div>
+                    <div class="text-17 fw-500 text-purple-1">800 388 80 90</div>
+                  </div>
+  
+                  <div class="lh-2 mt-10">
+                    <div>329 Queensberry Street,<br> North Melbourne VIC 3051, Australia.</div>
+                    <div>hi@FutureHealthHub.com</div>
+                  </div>
+  
+                  <div class="mobile-socials mt-10">
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+  
+                    <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+                <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                  <div class="icon-close text-dark-1 text-16"></div>
+                </div>
+              </div>
+  
+              <div class="header-menu-bg"></div>
+            </div>
+  
+  
+            <div class="col-auto">
+              <div class="header-right d-flex items-center">
+                <div class="header-right__icons text-white d-flex items-center">
+  
+                  <div class="">
+                    <button class="d-flex items-center text-white" data-el-toggle=".js-search-toggle">
+                      <i class="text-20 icon icon-search"></i>
+                    </button>
+                  </div>
+  
+                  <div class="d-none xl:d-block ml-20">
+                    <button class=" items-center" data-el-toggle=".js-mobile-menu-toggle">
+                      <i class="text-11 icon icon-mobile-menu"></i>
+                    </button>
+                  </div>
+  
+                </div>
+  
+                <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
+                  <a href="login.html" class="button -underline  login-btn">Log in</a>
+                 
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </header>
+
+    <div class="content-wrapper  js-content-wrapper">
+      <section class="page-header -type-1">
+
+        <div class="slider-area pos-relative">
+          <div class="slider-active">
+            <div class="single-slider slider-height d-flex align-items-center justify-content-center"
+              style="background-image: url(img/Payment-Option.jpg);">
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12">
+                  <div class="slider-content slider-content-2">
+                    <h1 class=" text-center white-color f-700" data-animation="fadeInUp" data-delay=".2s">Payment Option</h1>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="layout-pt-md layout-pb-lg">
+        <div data-anim-wrap class="container">
+          <div class="row y-gap-50 justify-between items-center">
+            <!-- <div class="text-center">
+              <p class="fontpara">Future Health Solution is one of the Best Ayurvedic therapy Center in Indore and
+                Ayurvedic Clinic in Indore, for complete health care based on principles of authentic Ayurveda.</p>
+            </div> -->
+
+            <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+
+                <img class="abtImg" src="img/general/abt-images-1.jpg" alt="image" />
+                <h4 class="text-center my-2">Our Mission</h4>
+                <p>To strive and improve, continuously, uninterrupted with passion and smile, towards customer delight,
+                  by putting our soul in high-quality services we offer- ‘relaxation and rejuvenating’, energies,</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+
+                <img class="abtImg" src="img/general/abt-images-2.jpg" alt="image" />
+                <h4 class="text-center my-2">Our Plan
+                </h4>
+                <p>That which causes us trials shall yield us triumph: and that which make our hearts ache shall fill us
+                  with gladness. The only true happiness is to learn, to advance, and to improve: which could not
+                  happen.</p>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img class="abtImg" src="img/general/abt-images-3.jpg" alt="image" />
+                <h4 class="text-center my-2">Our Vision</h4>
+                <p>To be the first among the bests respected true spirit retreat destination. inspiring holistic,
+                  sustainable, responsible and affordable approach towards the healthier well being of individual and
+                  others.</p>
+              </div>
+            </div> -->
+
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-center">
+                <img class="QRCODE" src="img/QR-code.jpeg" alt="image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer -type-1 bg-dark-1 -green-links">
+        <div class="container">
+          <div class="footer-header">
+            <div class="row y-gap-20 justify-between items-center">
+              <div class="col-auto">
+                <div class="footer-header__logo">
+                  <a data-barba href="index.html">
+                    <img src="img/general/logoo.png" alt="logo" class="header-logo">
+                  </a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="footer-header-socials">
+                  <div class="footer-header-socials__title text-white">Follow us on social media</div>
+                  <div class="footer-header-socials__list">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div class="row y-gap-30">
+              <div class="col-xl-4 col-lg-4 col-md-4">
+                <h4 style="color:#fff">Future Health Solution</h4>
+                <p class="my-2">Future Health Solution is one of the Best Ayurvedic therapy Center in Indore and
+                  Ayurvedic Clinic in Indore, for complete health care based on principles of authentic Ayurveda.</p>
+
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="text-17 fw-500 text-white uppercase mb-25">Useful Links</div>
+                <ul>
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Products</li>
+                  <li>Terms of use</li>
+                  <li>Privacy policy</li>
+                  <li>Payment</li>
+                  <li>Dealership</li>
+                  <li>Contact us</li>
+                </ul>
+              </div>
+
+
+              <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="text-17 fw-500 text-white uppercase mb-25">Contact us</div>
+                <p>
+                  For Query/Complaint
+                  Call Us at :- 8821010035
+                  Email At:- info@futurehealthsolution.co.in
+                  Address: DP Tower Choithram Square Opposite Choithram Bus Stop Indore – 452014 (M.P)
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="py-30 border-top-light-15">
+            <div class="row justify-between items-center y-gap-20">
+              <div class="col-auto">
+                <div class="d-flex items-center h-100 text-white">
+                  © 2024 FutureHealthHub. All Right Reserved.
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="d-flex x-gap-20 y-gap-20 items-center flex-wrap">
+                  <div>
+                    <div class="d-flex x-gap-15 text-white">
+                      <a href="help-center.html">Help</a>
+                      <a href="terms.html">Privacy Policy</a>
+                      <a href="terms.html">Cookie Notice</a>
+                      <a href="terms.html">Security</a>
+                      <a href="terms.html">Terms of Use</a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <a href="#" class="button px-30 h-50 -dark-6 rounded-200 text-white">
+                      <i class="icon-worldwide text-20 mr-15"></i><span class="text-15">English</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+
+</html>

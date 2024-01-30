@@ -91,7 +91,7 @@ button.addtocart.btn.btn-outline-primary {
     border-radius: 50px;
 }
 img.abtImg {
-    width: 390px;
+    width: 378px;
 }
 
 /* slider testimonial */
@@ -443,9 +443,6 @@ img.abtImg {
     margin-right: 0;
 
 }
-
-
-
 .slider-active .slick-dots li button {
 
     background: #fff;
@@ -479,8 +476,6 @@ img.abtImg {
     border: 1px solid #FDC800;
 
 }
-
-
 
 .slider-active .slick-arrow {
 
@@ -575,11 +570,6 @@ img.abtImg {
     color: red;
 
 }
-
-
-
-
-
 .slider-active .slick-prev::before {
 
     position: absolute;
@@ -603,17 +593,13 @@ img.abtImg {
 
 
 .slider-active-2 .slick-prev::before {
-
-    display: none;
-
+display: none;
 }
 
 
 
 .slider-active-2 .slick-next::before {
-
     position: absolute;
-
     content: "";
 
     width: 50px;
@@ -629,7 +615,6 @@ img.abtImg {
     left: -4px;
 
 }
-
 .slider-content h1{
   color:#fff;
 }
